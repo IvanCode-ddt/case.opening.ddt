@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>CS2 Style Case Simulator - Sidebar Wins</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <div class="container">
@@ -47,90 +46,24 @@
     <audio id="openSound" src="sounds/openingsound.mp3"></audio>
     <audio id="rareSound" src="sounds/wow.rare.mp3"></audio>
 
-    <script src="script.js"></script>
-</body>
-</html>
+    <!-- nhạc nền (đặt bên trong body) -->
+    <audio id="bgMusic" loop>
+      <source src="sounds/Quetoithanhoa.mp3" type="audio/mpeg">
+    </audio>
 
-
-        <!-- nhạc nền vào app là mở  -->
-<audio id="bgMusic" loop>
-  <source src="sounds/Quetoithanhoa.mp3" type="audio/mpeg">
-</audio>
-
-<script>
-    // Khi người dùng click bất kỳ lần đầu → bật nhạc
-  document.addEventListener('click', function startMusic() {
-    const music = document.getElementById('bgMusic');
-    music.volume = 0.2; // 👈 chỉnh âm lượng ban đầu ở đây (0.0 → 1.0)
-    music.play();
-    document.removeEventListener('click', startMusic);
-  });
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS2 Style Case Simulator - Sidebar Wins</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <!-- Trang chủ -->
-        <div id="homeScreen">
-            <h1>🎁 Choose Your Case 🎁</h1>
-            <div class="case-list" id="caseList"></div>
-        </div>
-
-        <!-- Chi tiết hòm -->
-        <div id="caseDetailScreen" class="hidden">
-            <h2 id="caseTitle"></h2>
-            <div class="item-list" id="itemList"></div>
-            <button id="openCaseBtn">Open Case</button>
-            <button id="cancelBtn">Cancel</button>
-        </div>
-
-        <!-- Animation mở hòm -->
-        <div id="caseAnimationScreen" class="hidden">
-            <h2>Opening Case...</h2>
-            <div class="case-window">
-                <div class="loot-track" id="lootTrack"></div>
-                <div class="highlight-bar"></div>
-                <div id="particleContainer"></div>
-            </div>
-            <p id="resultText"></p>
-            <button id="openNextBtn">Open Next</button>
-            <button id="backHomeBtn">Back to Home</button>
-        </div>
-    </div>
-
-    <!-- Sidebar Recent Wins -->
-    <div class="sidebar">
-        <h3>Recent Wins</h3>
-        <ul id="recentWinsList"></ul>
-    </div>
-
-    <!-- Âm thanh -->
-    <audio id="openSound" src="sounds/openingsound.mp3"></audio>
-    <audio id="rareSound" src="sounds/wow.rare.mp3"></audio>
+    <!-- bật nhạc khi người dùng tương tác lần đầu -->
+    <script>
+      function startBgMusic() {
+        const music = document.getElementById('bgMusic');
+        if (!music) return;
+        music.volume = 0.2;
+        music.play().catch(() => { /* nhiều trình duyệt chặn autoplay, ignore */ });
+        document.removeEventListener('click', startBgMusic);
+      }
+      // dùng once:true để tự huỷ listener
+      document.addEventListener('click', startBgMusic, { once: true });
+    </script>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-
-        <!-- nhạc nền vào app là mở  -->
-<audio id="bgMusic" loop>
-  <source src="sounds/Quetoithanhoa.mp3" type="audio/mpeg">
-</audio>
-
-<script>
-    // Khi người dùng click bất kỳ lần đầu → bật nhạc
-  document.addEventListener('click', function startMusic() {
-    const music = document.getElementById('bgMusic');
-    music.volume = 0.2; // 👈 chỉnh âm lượng ban đầu ở đây (0.0 → 1.0)
-    music.play();
-    document.removeEventListener('click', startMusic);
-  });
->>>>>>> 7dcb59dc87b2463184dbe9a16af4208f74c4906d
-</script>

@@ -3,7 +3,7 @@ const cases = [
         name: "Cơm case",
         img: "images/cases/comcase.png",
         items: [
-            {name: "Buterfly Gamma", img: "images/Comcase/buterflyknifegamma.png", rarity: "legendary", weight: 3},
+            {name: "Butterfly Gamma", img: "images/Comcase/buterflyknifegamma.png", rarity: "legendary", weight: 3},
             {name: "Awp Dragon Lore", img: "images/Comcase/awpdragonlore.png", rarity: "legendary", weight: 3},
             {name: "Ak47 Bluegem Titan", img: "images/Comcase/ak47titanholoblue.jpg", rarity: "legendary", weight: 3},
             {name: "Sports Gloves | Hedge Maze", img: "images/Comcase/gloves.webp", rarity: "legendary", weight: 3},

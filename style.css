@@ -1,0 +1,383 @@
+<<<<<<< HEAD
+/* Toàn trang */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Container chính */
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    margin-top: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Danh sách hòm & vật phẩm */
+.case-list, .item-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.case-card, .item-card {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 120px;
+    cursor: pointer;
+    background: rgba(0,0,0,0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.case-card:hover, .item-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px gold;
+}
+
+.case-card img, .item-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    object-fit: contain;
+    background: #fff;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Cửa sổ mở hòm */
+.case-window {
+    width: 800px;
+    height: 220px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    margin: 20px auto;
+    position: relative;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Thanh loot chạy */
+.loot-track {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height:100%;
+    
+    
+}
+
+.loot-track img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain; /* Không méo ảnh */
+    background: #fff;
+    border-radius: 8px;
+    flex-shrink: 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: block;
+}
+
+/* Vạch vàng ở giữa */
+.highlight-bar {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100%;
+    border: 2px solid gold;
+    box-shadow: 0 0 15px gold;
+    pointer-events: none;
+    z-index: 5;
+}
+
+/* Hiệu ứng hạt */
+#particleContainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+/* Nút */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: gold;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px;
+}
+
+button:hover {
+    background: orange;
+}
+
+/* Sidebar Recent Wins */
+.sidebar {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    width: 220px;
+    background: rgba(0,0,0,0.5);
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.5s ease;
+    background: rgba(255,255,255,0.05);
+    border-radius: 5px;
+}
+
+.sidebar li img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.sidebar li.new-item {
+    opacity: 1;
+    transform: translateX(0);
+    box-shadow: 0 0 15px gold;
+}
+=======
+/* Toàn trang */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Container chính */
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    margin-top: 50px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Danh sách hòm & vật phẩm */
+.case-list, .item-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.case-card, .item-card {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+    width: 120px;
+    cursor: pointer;
+    background: rgba(0,0,0,0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.case-card:hover, .item-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px gold;
+}
+
+.case-card img, .item-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    object-fit: contain;
+    background: #fff;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Cửa sổ mở hòm */
+.case-window {
+    width: 800px;
+    height: 220px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    margin: 20px auto;
+    position: relative;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Thanh loot chạy */
+.loot-track {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height:100%;
+    
+    
+}
+
+.loot-track img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain; /* Không méo ảnh */
+    background: #fff;
+    border-radius: 8px;
+    flex-shrink: 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: block;
+}
+
+/* Vạch vàng ở giữa */
+.highlight-bar {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100%;
+    border: 2px solid gold;
+    box-shadow: 0 0 15px gold;
+    pointer-events: none;
+    z-index: 5;
+}
+
+/* Hiệu ứng hạt */
+#particleContainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+/* Nút */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: gold;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px;
+}
+
+button:hover {
+    background: orange;
+}
+
+/* Sidebar Recent Wins */
+.sidebar {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    width: 220px;
+    background: rgba(0,0,0,0.5);
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    opacity: 0;
+    transform: translateX(20px);
+    transition: all 0.5s ease;
+    background: rgba(255,255,255,0.05);
+    border-radius: 5px;
+}
+
+.sidebar li img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.sidebar li.new-item {
+    opacity: 1;
+    transform: translateX(0);
+    box-shadow: 0 0 15px gold;
+}
+>>>>>>> 7dcb59dc87b2463184dbe9a16af4208f74c4906d

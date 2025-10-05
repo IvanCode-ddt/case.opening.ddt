@@ -1,18 +1,21 @@
 const cases = [
     {
-        name: "Cơm case",
-        img: "images/cases/comcase.png",
+        name: "36 Collection",
+        img: "images/cases/36 Collection.png",
         items: [
-            {name: "Butterfly Gamma", img: "images/Comcase/buterflyknifegamma.png", rarity: "legendary", weight: 3},
-            {name: "Awp Dragon Lore", img: "images/Comcase/awpdragonlore.png", rarity: "legendary", weight: 3},
-            {name: "Ak47 Bluegem Titan", img: "images/Comcase/ak47titanholoblue.jpg", rarity: "legendary", weight: 3},
-            {name: "Sports Gloves | Hedge Maze", img: "images/Comcase/gloves.webp", rarity: "legendary", weight: 3},
-            {name: "12 Đôi dép", img: "images/Comcase/12doidep.png", rarity: "common", weight: 14},
-            {name: "Cứt", img: "images/Comcase/cut1.jpg", rarity: "common", weight: 14},
-            {name: "Cứt", img: "images/Comcase/cut.jpg", rarity: "common", weight: 14},
-            {name: "Đường ray", img: "images/Comcase/duongray.png", rarity: "common", weight: 14},
-            {name: "Nem chua", img: "images/Comcase/nemchua.jpg", rarity: "common", weight: 14},
-            {name: "Rau Má", img: "images/Comcase/rauma.png", rarity: "common", weight: 18}
+            {name: "12 Đôi dép", img: "images/Comcase/12doidep.png", rarity: "common", weight: 10.55555555555556},
+            {name: "Đường ray", img: "images/Comcase/duongray.png", rarity: "common", weight: 10.55555555555556},
+            {name: "Nem chua", img: "images/Comcase/nemchua.jpg", rarity: "common", weight: 10.55555555555556},
+            {name: "Rau Má", img: "images/Comcase/rauma.png", rarity: "common", weight: 10.55555555555556},
+            {name: "Phiếu từ chối", img: "images/Comcase/tuchoituyendung.jpg", rarity: "common", weight: 10.55555555555556},
+            {name: "Ống dầu thủng", img: "images/Comcase/ongdandauthung.png", rarity: "common", weight: 10.55555555555556},
+            {name: "Dây điện thoại đứt", img: "images/Comcase/daydienthoaidut.png", rarity: "common", weight: 10.55555555555556},
+            {name: "Mỳ tôm mùa lũ", img: "images/Comcase/mytommualu.png", rarity: "common", weight: 10.55555555555556},
+            {name: "Cá free mùa lũ", img: "images/Comcase/cafree.png", rarity: "common", weight: 10.55555555555556},
+            {name: "Cá rô vĩnh viễn", img: "images/Comcase/carocay.png", rarity: "legendary", weight: 5},
+
+
+
         ]
     },
     {
